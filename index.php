@@ -37,11 +37,21 @@
 </nav>
     </header>
     <main>
+      <div class="logo-nome">
+      <h1>JD reparos</h1>
+      <h3>em eletrodomesticos</h3>
+      </div>
       <div class="banner">
+        
         <img src="image/banner.jpg" class="img-banner" alt="JD reparos">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi impedit totam deleniti laboriosam 
-          non explicabo! Quo architecto doloremque deserunt nostrum aperiam earum incidunt, sapiente, nisi 
-          recusandae, nesciunt quos consequuntur tenetur.</p>
+        <p>Seu eletrodoméstico parou de funcionar? faça uma avaliação conosco. Aqui na JD reparos 
+          disponibilizamos serviços de concerto em partes elétricas de diversos produtos. Nosso
+          estabelecimento fica em Araruna-Paraná, mas também atendemos em regiôes proximas. Se algum
+          eletrodoméstico parou de funcionar e deseja concertar entre em contato conosco.
+          <br>
+          <a href="contato.php" class="btn btn-danger">Contato</a>
+        </p>
+
       </div>
     </main>
     
