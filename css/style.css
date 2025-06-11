@@ -1,0 +1,24 @@
+.img-logo {
+  width: 100px;
+}
+.navbar {
+  background-color: rgb(214, 214, 214) !important;
+  padding-left: 50px;
+}
+.navbar-nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.nav-link:hover {
+  color: rgb(255, 9, 9);
+  font-size: 22px;
+}
+.btn:hover {
+  background-color: green;
+  border: 0;
+}
+
+.banner{
+  display: flex;
+}
