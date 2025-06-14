@@ -58,11 +58,18 @@
         <div class="col-md3 mb-4 menu-footer">
         <img src="image/logo.png" alt="" style="width: 150px;">
         <div class="menu">
-          <h3>Menu</h3>
-          <a href="index.php">Home</a>
-          <a href="index.php">Serviços</a>
-          <a href="index.php">Home</a>
-
+          <ul>
+            <h3>Menu</h3>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="index.php">Serviços</a></li>
+            <li><a href="index.php">Sobre</a></li>
+        </ul>
+        <ul>
+            <h3>Menu</h3>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="index.php">Serviços</a></li>
+            <li><a href="index.php">Sobre</a></li>
+        </ul>
         </div>
 
 </div>
