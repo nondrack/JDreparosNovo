@@ -1,5 +1,5 @@
-*{
-  margin: 0%;
+* {
+  margin: 0;
   padding: 0;
 }
 
@@ -28,6 +28,9 @@
   display: flex;
   padding: 20px;
   padding-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 3%;
   img {
     width: 45%;
     border-radius: 15px;
@@ -37,7 +40,8 @@
     font-size: 25px;
   }
   .btn-banner {
-    justify-content: end;
+    margin-left: 40%;
+    margin-top: 5%;
   }
 }
 .logo-nome {
@@ -56,36 +60,106 @@
   }
 }
 footer {
-  
+  .container {
+    display: flex;
+    justify-content: center;
+    img {
+      margin-right: auto;
+    }
+  }
   background-color: rgb(214, 214, 214);
   .menu-footer {
     display: flex;
     flex-direction: row;
   }
-  .menu{
+  .menu {
     gap: 20px;
     display: flex;
     flex-direction: row;
     font-family: arial;
     padding-top: 20px;
-    
-    a{
+
+    a {
       text-decoration: none;
       color: black;
+    }
+    h3 {
       font-weight: bold;
     }
-    a:hover{
+    a:hover {
       color: red;
+    }
+    .local {
+      list-style: none;
+      font-family: arial;
+    }
+  }
+  iframe {
+    box-shadow: 0px 0px 5px red;
+  }
+  .social {
+    li {
+      list-style: none;
     }
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .banner {
     flex-direction: column;
     align-items: center;
     img {
       width: 90%;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  footer {
+    .container {
+      display: flex;
+      justify-content: center;
+      img {
+        margin-right: auto;
+      }
+    }
+    background-color: rgb(214, 214, 214);
+    img{
+      display: none;
+    }
+    .menu-footer {
+      display: flex;
+      flex-direction: column;
+    }
+    .menu {
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      font-family: arial;
+      padding-top: 20px;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      h3 {
+        font-weight: bold;
+      }
+      a:hover {
+        color: red;
+      }
+      .local {
+        list-style: none;
+        font-family: arial;
+      }
+    }
+    iframe {
+      box-shadow: 0px 0px 5px red;
+    }
+    .social {
+      li {
+        list-style: none;
+      }
     }
   }
 }
