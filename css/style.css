@@ -104,6 +104,37 @@ footer {
   }
 }
 
+.custom-carousel-img {
+  height: 400px; /* ou ajuste conforme desejado */
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-img-sm {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+/* Para telas menores */
+@media (max-width: 768px) {
+  .carousel-img-sm {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-img-sm {
+    height: 160px;
+  }
+}
+
+.carrossel .carousel-item img {
+  margin: 0 auto; /* centraliza imagem */
+}
+
+
 @media (max-width: 1300px) {
   .banner {
     flex-direction: column;

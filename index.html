@@ -40,60 +40,141 @@
     </nav>
   </header>
   <main>
-    <div class="logo-nome">
-      <h1>JD reparos</h1>
-      <h3>em eletrodomesticos</h3>
+    <section class="py-5 bg-light">
+  <div class="container text-center">
+    <div class="mb-4">
+      <h1 class="display-4 fw-bold text-danger">JD Reparos</h1>
+      <h3 class="text-muted">Conserto de Eletrodomésticos</h3>
     </div>
-    <div class="banner">
-      <img src="image/banner.jpg" class="img-banner" alt="JD reparos">
-      <p>Seu eletrodoméstico parou de funcionar? faça uma avaliação conosco. Aqui na JD reparos
-        disponibilizamos serviços de concerto em partes elétricas de diversos produtos. Nosso
-        estabelecimento fica em Araruna-Paraná, mas também atendemos em regiôes proximas. Se algum
-        eletrodoméstico parou de funcionar e deseja concertar entre em contato conosco.
-        <br>
-         <a href="contato.php" class="btn btn-danger btn-banner">Contato</a>
-        
-      </p>
-      <div class="d-flex justift-content-center align-items-center">
-     
+
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="image/banner.jpg" class="img-fluid rounded shadow" alt="JD Reparos">
+      </div>
+      <div class="col-md-6 text-start">
+        <p class="lead">
+          Seu eletrodoméstico parou de funcionar? Faça uma avaliação conosco!
+          Na <strong>JD Reparos</strong>, oferecemos consertos especializados em componentes elétricos de diversos produtos.
+          Atendemos em <strong>Araruna-PR</strong> e região.
+        </p>
+        <p class="mb-4">Entre em contato e agende seu atendimento com rapidez e confiança.</p>
+        <a href="contato.php" class="btn btn-danger btn-lg">Fale Conosco</a>
       </div>
     </div>
+  </div>
+</section>
+
+   <section class="servicos py-4 bg-light">
+  <div class="container">
+    <h2 class="text-center text-danger fw-bold mb-4">Tipos de Serviços</h2>
+
+    <div id="carouselExampleDark" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner shadow rounded-4 overflow-hidden">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="image/maquina.png" class="d-block w-100 img-fluid carousel-img-sm" alt="Máquina de Lavar">
+          <div class="carousel-caption bg-dark bg-opacity-75 rounded-3 p-2">
+            <h5 class="text-white">Máquina de Lavar</h5>
+            <p class="text-light small">Conserto de lavadoras de todas as marcas com diagnóstico técnico especializado.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="image/geladeira.png" class="d-block w-100 img-fluid carousel-img-sm" alt="Geladeira">
+          <div class="carousel-caption bg-dark bg-opacity-75 rounded-3 p-2">
+            <h5 class="text-white">Geladeiras</h5>
+            <p class="text-light small">Reparo eficiente em sistemas de refrigeração doméstica.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="image/microondas.png" class="d-block w-100 img-fluid carousel-img-sm" alt="Micro-ondas">
+          <div class="carousel-caption bg-dark bg-opacity-75 rounded-3 p-2">
+            <h5 class="text-white">Micro-ondas</h5>
+            <p class="text-light small">Diagnóstico ágil e conserto completo de micro-ondas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
   </main>
 
 
-  <footer>
+  <footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row">
 
-    <div class="container">
-      <img src="image/logo.png" alt="" style="width: 150px;">
-      <div class="menu-footer">
+      <!-- Logo + Descrição -->
+      <div class="col-md-3 mb-4">
+        <img src="image/logo.png" alt="Logo JD Reparos" class="img-fluid mb-3" style="max-width: 150px;">
+        <p class="small">Consertos rápidos e confiáveis em Araruna-PR e região.</p>
+      </div>
 
-        <div class="menu">
-          <ul>
-            <h3>Menu</h3>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="index.php">Serviços</a></li>
-            <li><a href="index.php">Sobre</a></li>
-          </ul>
+      <!-- Menu -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-uppercase">Menu</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.php" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="index.php" class="text-white text-decoration-none">Serviços</a></li>
+          <li><a href="index.php" class="text-white text-decoration-none">Sobre</a></li>
+        </ul>
+      </div>
 
+      <!-- Social -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-uppercase">Redes Sociais</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+        </ul>
+      </div>
 
-          <div class="text-center col-md-3 social">
-            <h3>Social</h3>
-            <ul>
-              <li><a href="index.html">Instagram</a></li>
-              <li><a href="index.html">Facebook</a></li>
-            </ul>
-          </div>
+      <!-- Endereço + Mapa -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-uppercase">Endereço</h5>
+        <p class="small mb-2">
+          Araruna - PR<br>
+          Av. Ramiro Roselen, Nº 90<br>
+          CNPJ: 29.834.104/8203-4
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.9248713210186!2d-52.485192700000006!3d-23.927714299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed6e2dc9c4027d%3A0x92e028c66b6a1267!2sJD%20REPAROS!5e0!3m2!1spt-PT!2sbr!4v1750036897001!5m2!1spt-PT!2sbr"
+          width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
 
+    </div>
 
-          <div class="col-md-7 mb-6">
-            <h3>Local de Atendimento</h3>
-            <div class="d-flex flex-row gap-3 aline-itens-start">
-              <p> Araruna-Pr <br>Av.Ramiro roselen <br>N°90 <br>CNPJ: 2983410482034
-              </p>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.9248713210186!2d-52.485192700000006!3d-23.927714299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed6e2dc9c4027d%3A0x92e028c66b6a1267!2sJD%20REPAROS!5e0!3m2!1spt-PT!2sbr!4v1750036897001!5m2!1spt-PT!2sbr"
-                width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Rodapé inferior -->
+    <div class="text-center mt-4 pt-3 border-top border-light small">
+      © 2025 JD Reparos. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
 
             </div>
           </div>
