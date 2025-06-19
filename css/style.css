@@ -103,6 +103,11 @@ footer {
     }
   }
 }
+footer a:hover {
+  color: #ffc107 !important; /* amarelo Bootstrap */
+  text-decoration: underline;
+  transform: translateX(5px);
+}
 
 .custom-carousel-img {
   height: 400px; /* ou ajuste conforme desejado */
@@ -134,7 +139,6 @@ footer {
   margin: 0 auto; /* centraliza imagem */
 }
 
-
 @media (max-width: 1300px) {
   .banner {
     flex-direction: column;
@@ -155,7 +159,7 @@ footer {
       }
     }
     background-color: rgb(214, 214, 214);
-    img{
+    img {
       display: none;
     }
     .menu-footer {

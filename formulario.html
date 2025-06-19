@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/servicos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>JD reparos</title>
+</head>
+
+<body>
+  <header class="menu-header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a> <img src="image/logo.png" class="img-logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto m-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicos.html">Serviços</a>
+            </li>
+            </li>
+          </ul>
+          <a href="formulario.html" class="btn btn-danger">
+            <i class="fa-brands fa-whatsapp"></i>
+            Contato
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center text-danger fw-bold mb-4">Agende nossa visita</h2>
+
+    <form id="whatsappForm" class="row g-3">
+      <!-- Nome completo -->
+      <div class="col-md-6">
+        <label for="nome" class="form-label">Nome completo</label>
+        <input type="text" class="form-control" id="nome" required>
+      </div>
+
+      <!-- Número para contato -->
+      <div class="col-md-6">
+        <label for="telefone" class="form-label">Número para Contato</label>
+        <input type="tel" class="form-control" id="telefone" required>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="col-12">
+        <label for="maps" class="form-label">Link do Google Maps (opcional)</label>
+        <input type="url" class="form-control" id="maps" placeholder="https://maps.app.goo.gl/exemplo">
+      </div>
+
+      <!-- Endereço -->
+      <div class="col-md-4">
+        <label for="cidade" class="form-label">Cidade</label>
+        <input type="text" class="form-control" id="cidade" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="jardim" class="form-label">Jardim / Bairro</label>
+        <input type="text" class="form-control" id="jardim" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="rua" class="form-label">Rua</label>
+        <input type="text" class="form-control" id="rua" required>
+      </div>
+
+      <!-- Mensagem -->
+      <div class="col-12">
+        <label for="mensagem" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="mensagem" rows="4" required placeholder="Descreva o problema ou solicitação..."></textarea>
+      </div>
+
+      <!-- Botão -->
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-success px-4 py-2">
+          <i class="fab fa-whatsapp me-2"></i>Enviar para WhatsApp
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- JavaScript corrigido -->
+<script>
+  document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nome = document.getElementById("nome").value.trim();
+    const telefone = document.getElementById("telefone").value.trim();
+    const maps = document.getElementById("maps").value.trim();
+    const cidade = document.getElementById("cidade").value.trim();
+    const jardim = document.getElementById("jardim").value.trim();
+    const rua = document.getElementById("rua").value.trim();
+    const mensagem = document.getElementById("mensagem").value.trim();
+
+    const texto = `*Agendamento de Visita*%0A` +
+      `*Nome:* ${nome}%0A` +
+      `*Contato:* ${telefone}%0A` +
+      `*Endereço:* ${rua}, ${jardim}, ${cidade}%0A` +
+      (maps ? `*Google Maps:* ${maps}%0A` : '') +
+      `*Mensagem:* ${mensagem}`;
+
+    const numero = "5544999366815"; // Seu número com DDI (55) e DDD (ex: 44)
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, '_blank');
+  });
+</script>
+
+
+
+    
+
+
+
+  </main>
+
+
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+
+        <!-- Logo + Descrição -->
+        <div class="col-md-3 mb-4">
+          <img src="image/logo.png" alt="Logo JD Reparos" class="img-fluid mb-3" style="max-width: 150px;">
+          <p class="small">Consertos rápidos e confiáveis em Araruna-PR e região.</p>
+        </div>
+
+        <!-- Menu -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Menu</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="servicos.html" class="text-white text-decoration-none">Serviços</a></li>
+            <li><a href="sobre.html" class="text-white text-decoration-none">Sobre</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Redes Sociais</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+          </ul>
+        </div>
+
+        <!-- Endereço + Mapa -->
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">Endereço</h5>
+          <p class="small mb-2">
+            Araruna - PR<br>
+            Av. Ramiro Roselen, Nº 90<br>
+            CNPJ: 29.834.104/8203-4
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.9248713210186!2d-52.485192700000006!3d-23.927714299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed6e2dc9c4027d%3A0x92e028c66b6a1267!2sJD%20REPAROS!5e0!3m2!1spt-PT!2sbr!4v1750036897001!5m2!1spt-PT!2sbr"
+            width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+
+      <!-- Rodapé inferior -->
+      <div class="text-center mt-4 pt-3 border-top border-light small">
+        © 2025 JD Reparos. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  </div>
+  </div>
+  </div>
+
+
+  </div>
+
+
+  </div>
+  </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+</html>
