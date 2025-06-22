@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+main {
+  padding-top: 13vh;
+}
 
 .img-logo {
   width: 100px;
@@ -24,26 +27,6 @@
   border: 0;
 }
 
-.banner {
-  display: flex;
-  padding: 20px;
-  padding-top: 30px;
-  margin-left: 10%;
-  margin-right: 10%;
-  gap: 3%;
-  img {
-    width: 45%;
-    border-radius: 15px;
-  }
-  p {
-    padding-left: 10px;
-    font-size: 25px;
-  }
-  .btn-banner {
-    margin-left: 40%;
-    margin-top: 5%;
-  }
-}
 .logo-nome {
   display: flex;
   flex-direction: column;
@@ -120,6 +103,78 @@ footer a:hover {
   object-fit: cover;
   object-position: center;
   border-radius: 0.5rem;
+}
+
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+/* Transições suaves gerais */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar hover */
+.nav-link:hover {
+  color: #dc3545 !important; /* vermelho */
+  transform: scale(1.05);
+}
+
+/* Botão com transição */
+.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagens com zoom leve */
+img.img-fluid {
+  transition: transform 0.5s ease;
+}
+
+img.img-fluid:hover {
+  transform: scale(1.03);
+}
+
+/* Carousel - legenda */
+.carousel-caption {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-caption:hover {
+  transform: scale(1.02);
+}
+
+/* Links no footer */
+footer a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107 !important; /* amarelo */
+  text-decoration: underline;
+  transform: translateX(5px);
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107 !important;
+  /* amarelo Bootstrap */
+  text-decoration: underline;
+  transform: translateX(5px);
+}
+footer{
+  position: absolute;
+  width: 100%;
+  margin-top: 26px;
 }
 
 /* Para telas menores */

@@ -29,7 +29,7 @@
               <a class="nav-link " href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sobre.html">Sobre</a>
+              <a class="nav-link" href="vendas.html">Vendas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="servicos.html">Serviços</a>
@@ -59,7 +59,7 @@
       <!-- Número para contato -->
       <div class="col-md-6">
         <label for="telefone" class="form-label">Número para Contato</label>
-        <input type="tel" class="form-control" id="telefone" required>
+        <input type="tel" class="form-control" id="telefone" required placeholder="(00) 00000-0000">
       </div>
 
       <!-- Google Maps -->
@@ -113,11 +113,11 @@
     const rua = document.getElementById("rua").value.trim();
     const mensagem = document.getElementById("mensagem").value.trim();
 
-    const texto = `*Agendamento de Visita*%0A` +
-      `*Nome:* ${nome}%0A` +
-      `*Contato:* ${telefone}%0A` +
-      `*Endereço:* ${rua}, ${jardim}, ${cidade}%0A` +
-      (maps ? `*Google Maps:* ${maps}%0A` : '') +
+    const texto = `*Agendamento de Visita*` +
+      `*Nome:* ${nome}` +
+      `*Contato:* ${telefone}` +
+      `*Endereço:* ${rua}, ${jardim}, ${cidade}` +
+      (maps ? `*Google Maps:* ${maps}` : '') +
       `*Mensagem:* ${mensagem}`;
 
     const numero = "5544999366815"; // Seu número com DDI (55) e DDD (ex: 44)
@@ -152,7 +152,7 @@
           <ul class="list-unstyled">
             <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
             <li><a href="servicos.html" class="text-white text-decoration-none">Serviços</a></li>
-            <li><a href="sobre.html" class="text-white text-decoration-none">Sobre</a></li>
+            <li><a href="sobre.html" class="text-white text-decoration-none">Vendas</a></li>
           </ul>
         </div>
 
@@ -171,7 +171,7 @@
           <p class="small mb-2">
             Araruna - PR<br>
             Av. Ramiro Roselen, Nº 90<br>
-            CNPJ: 29.834.104/8203-4
+            CNPJ: 21.763.066/0001-03
           </p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.9248713210186!2d-52.485192700000006!3d-23.927714299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed6e2dc9c4027d%3A0x92e028c66b6a1267!2sJD%20REPAROS!5e0!3m2!1spt-PT!2sbr!4v1750036897001!5m2!1spt-PT!2sbr"
@@ -187,17 +187,6 @@
         © 2025 JD Reparos. Todos os direitos reservados.
       </div>
     </div>
-  </footer>
-
-  </div>
-  </div>
-  </div>
-
-
-  </div>
-
-
-  </div>
   </footer>
 
 </body>
