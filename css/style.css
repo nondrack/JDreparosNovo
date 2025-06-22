@@ -3,7 +3,14 @@
   padding: 0;
 }
 main {
-  padding-top: 13vh;
+  padding-top: 12vh;
+}
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .img-logo {
@@ -171,7 +178,7 @@ footer a:hover {
   text-decoration: underline;
   transform: translateX(5px);
 }
-footer{
+footer {
   position: absolute;
   width: 100%;
   margin-top: 26px;
@@ -251,5 +258,11 @@ footer{
         list-style: none;
       }
     }
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    padding-top: 18vh;
   }
 }
